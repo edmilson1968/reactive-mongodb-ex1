@@ -1,0 +1,13 @@
+version: '3.1'
+services:
+  mongo1:
+    image: mongo
+    command: --smallfiles
+    ports: 
+      - 27017:27017
+  mongo2:
+    image: mongo
+    command: --smallfiles
+    ports: 
+      - 37017:27017
+  
